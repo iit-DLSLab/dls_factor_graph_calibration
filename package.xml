@@ -1,0 +1,30 @@
+<package format="2">
+	<name>self_camera_calibration</name>
+
+	<version>0.0.1</version>
+
+	<description>
+		This package finds the mutual position and orientation between a
+                camera and the base link of HyQ. It uses the forward kinematics
+		and a special foot design, which has attached a ChAruCo marker on it.
+
+		The transform is obtained by nonlinear optimization on a set of 
+		points collected by the camera and by the forward kinematics.
+	</description>
+
+	<author email="marco.camurri@iit.it">Marco Camurri</author>
+	<author email="andrzej.reinke@iit.it">Andrzej Reinke</author>
+
+	<maintainer email="marco.camurri@iit.it">Marco Camurri</maintainer>
+
+	<license>Apache 2.0</license>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<depend>roscpp</depend>
+	<depend>sensor_msgs</depend>
+	<depend>cv_bridge</depend>
+	<depend>tf</depend>
+
+</package>
+
