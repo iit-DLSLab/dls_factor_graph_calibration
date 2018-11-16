@@ -1,0 +1,14 @@
+# topic from which we take the camera images
+image_topic : "/multisense/left/image_mono"
+# topic from which we take the camera parameters
+camera_info_topic : "/multisense/left/image_mono/camera_info"
+# topic from which we take the joint states
+camera_frame_name : "/multisense/left_camera_optical_frame"
+# frame of reference at the sensor mounting point.
+# Typically this has x-axis point forward, y-axis pointing left
+# z-axis pointing up
+# the calibration output will be from "base_link" to this frame
+sensor_frame_name : "/head"
+# number of valid points to evaluate for the optimization
+points_number : 300
+

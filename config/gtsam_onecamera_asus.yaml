@@ -1,0 +1,17 @@
+# topic from which we take the camera images
+image_topic : "/asus/rgb/image_raw"
+# topic from which we take the camera parameters
+camera_info_topic : "/asus/rgb/camera_info"
+# topic from which we take the joint states
+joint_state_topic : "/hyq/joint_states"
+# frame of reference at the sensor mounting point.
+# Typically this has x-axis point forward, y-axis pointing left
+# z-axis pointing up
+# the calibration output will be from "base_link" to this frame
+sensor_frame_name : "/asus_mount_link"
+
+camera_frame_name: "/asus_rgb_optical_frame"
+
+# number of valid points to evaluate for the optimization
+points_number : 300
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<launch>
+<node name="gtsam_calib_multi" type="gtsam_calib_multi" pkg="self_camera_calibration" output="screen" >
+</node>
+
+
+</launch>

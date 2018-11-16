@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<launch>
+<node name="oneshot_multisense_calibration" type="gtsam_calib_one_camera" pkg="self_camera_calibration" output="screen" >
+        <rosparam command="load" file="$(find self_camera_calibration)/config/gtsam_onecamera_multisense.yaml"/>
+</node>
+
+
+</launch>
